@@ -1,0 +1,44 @@
+### add new book
+POST http://localhost:3000/books
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Buku A",
+  "year": 2010,
+  "author": "John Doe",
+  "summary": "Lorem ipsum dolor sit amet",
+  "publisher": "Dicoding Indonesia",
+  "pageCount": 100,
+  "readPage": 25,
+  "reading": false
+}
+
+### fetching books data
+GET http://localhost:3000/books
+Accept: application/json
+Content-Type: application/json
+
+### fetching book data by id
+GET http://localhost:3000/books/0DydipVMJsam1vM1z7jV6
+Accept: application/json
+
+
+### update existing book by id
+PUT http://localhost:3000/books/0DydipVMJsam1vM1z7jV6
+Content-Type: application/json
+
+{
+  "name": "Buku Zaw",
+  "year": 2001,
+  "author": "John Doe",
+  "summary": "Lorem ipsum dolor sit amet",
+  "publisher": "Dicoding Indonesia",
+  "pageCount": 100,
+  "readPage": 25,
+  "reading": false
+}
+
+### delete existing book by id
+DELETE http://localhost:3000/books/9IiC44A-sr57a4rZEGK4v
+Content-Type: application/json
